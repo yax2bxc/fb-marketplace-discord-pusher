@@ -8,6 +8,7 @@ Run this userscript instead that checks the FB Marketplace and pushes to a disco
 
 ## Steps to Run
 Please ensure you have the location of you choosing configured. Sorted by new and listed within 7 days to have relevant postings!
+
 ![alt text](image-1.png)
 
 Add the userscripts on a userscript extension of your browser. I am using Violentmonkey.
