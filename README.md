@@ -2,17 +2,28 @@
 
 ![alt text](image.png)
 
-Tired of relying on unreliable facebook notifications?
+A facebook userscript that checks FB Marketplace intervally and pushes onto a discord webhook!
 
-Run this userscript instead that checks the FB Marketplace and pushes to a discord webhook instead!
+## Requirements
+
+- Chrome Browser
+- Violent Monkey Extension
+- Facebook Account
 
 ## Steps to Run
-Please ensure you have the location of your choosing configured. Sorted by new and listed within 7 days to have relevant postings!
 
+1. Open Chrome
+2. Navigate to [facebook](https://facebook.com) and log in with your personal account
+3. Install the two Userscripts onto violentmonkey
+4. Adjust the excluded keywords in facebook item spawner.js
+```js
+excluded = ['free','ship'] 
+```
+4. Adjust the webhook in item pusher.js
+```js
+discordwebhookurl = "YOUR URL HERE"
+```
+5. Enable the userscripts
+6. Navigate to facebook marketplace and search item of your choosing
+7. Adjust the location of your choosing, pick sort by new and listed within 7 days for best results
 ![alt text](image-1.png)
-
-Add the userscripts on a userscript extension of your browser. I am using Violentmonkey.
-Within the Usercripts configure the parameters to your liking as well!
-You have to be logged into facebook for this to work! I'm running the userscripts on firefox in the background.
-
-There are two Userscripts. One for opening tabs of unopened items in FB Marketplace Search on an interval. And the other is to push the tab of items onto the discord webhook.

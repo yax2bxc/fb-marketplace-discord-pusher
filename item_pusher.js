@@ -1,6 +1,6 @@
 
 // ==UserScript==
-// @name        Faceu
+// @name        FB marketplace item discord Pusher
 // @namespace   Violentmonkey Scripts
 // @match       https://www.facebook.com/marketplace/item/*
 // @grant       GM_registerMenuCommand
