@@ -26,7 +26,6 @@ function formatImgSrc(imgsrc){
 
 function saveDeleted(imgsrc){
   listings = []
-  listings.push(formatImgSrc(imgsrc))
   GM_setValue("fbmarket",listings)
 }
 
@@ -47,7 +46,6 @@ function checkDeleted(addedNode){
       return null
     }
   }
-  able.push(addedNode)
 }
 
 collection = document.querySelector('div[aria-label="Collection of Marketplace items"]')
