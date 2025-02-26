@@ -39,7 +39,6 @@ deletedCache = {}
 function checkDeleted(addedNode){
   listings = GM_getValue("fbmarket",[])
   pathname = formatImgSrc(getImgSrc(addedNode))
-  deletedCache[pathname] = addedNode
   if(listings.includes(pathname)){
     setTimeout(()=>{
       addedNode.style['display'] = 'none'
@@ -56,32 +55,6 @@ function checkDeleted(addedNode){
   }
   able.push(addedNode)
 }
-
-/*
-function undo(){
-  listings = GM_getValue("fbmarket",[])
-  pathname = listings.pop()
-  console.log(pathname)
-  console.log(deletedCache)
-  if(deletedCache.hasOwnProperty(pathname)){
-    deletedCache[pathname].style['display'] = ''
-  }
-  GM_setValue("fbmarket",listings)
-}
-
-function createUndoButton(){
-  undoButton = document.createElement('div')
-  undoButton.style['position'] = 'fixed'
-  undoButton.style['top'] = '10px'
-  undoButton.style['left'] = '120px'
-  undoButton.style['font-size'] = '30px'
-  undoButton.innerHTML += '↩️'
-  undoButton.addEventListener("click",undo)
-  document.querySelector('body').appendChild(undoButton)
-}
-
-createUndoButton()
-*/
 
 collection = document.querySelector('div[aria-label="Collection of Marketplace items"]')
 init = collection.getElementsByClassName("x9f620 x78zum5 x1r8very xdt5ytf x1iyjqo2 xs83m0k x1e558r4 x150jy0e x1iorvi4 xjkvuk6 xnpuxes x291uyu x1uepa24")
