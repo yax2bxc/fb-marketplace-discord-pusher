@@ -25,7 +25,7 @@ function formatImgSrc(imgsrc){
 }
 
 function saveDeleted(imgsrc){
-  listings = GM_getValue("fbmarket",[])
+  listings = []
   listings.push(formatImgSrc(imgsrc))
   GM_setValue("fbmarket",listings)
 }
@@ -37,19 +37,13 @@ function getImgSrc(node){
 deletedCache = {}
 
 function checkDeleted(addedNode){
-  listings = GM_getValue("fbmarket",[])
+  listings = []
   pathname = formatImgSrc(getImgSrc(addedNode))
   if(listings.includes(pathname)){
-    setTimeout(()=>{
-      addedNode.style['display'] = 'none'
-    },700)
     return null
   }
   for(const word of excluded){
     if(addedNode.innerText.toLowerCase().includes(word)){
-      setTimeout(()=>{
-        addedNode.style['display'] = 'none'
-      },700)
       return null
     }
   }
