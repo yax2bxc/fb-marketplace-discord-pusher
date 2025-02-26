@@ -17,7 +17,7 @@ A facebook userscript that checks FB Marketplace intervally and pushes onto a di
 3. Install the two Userscripts onto violentmonkey
 4. Adjust the excluded keywords in facebook item spawner.js
 ```js
-excluded = ['free','ship'] 
+excluded = ['free'] 
 ```
 4. Adjust the webhook in item pusher.js
 ```js

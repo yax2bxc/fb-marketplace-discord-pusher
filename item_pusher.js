@@ -14,7 +14,7 @@
 // Discord webhook url to push embeds onto
 discordwebhookurl = "YOUR URL HERE"
 // Excluded description words as to not push scams onto the discord webhook
-var bioexcluded = ["www.","for more details","screenshot","number","text",'http']
+var bioexcluded = []
 
 function formatImgSrc(imgsrc){
   return new URL(imgsrc).pathname.split('/').pop()
@@ -109,8 +109,3 @@ GM_registerMenuCommand("Send Embed",()=>{
   console.log("Sending!")
   checkPage()
 })
-
-setTimeout(()=>{
-  checkPage()
-  setTimeout(()=>{window.close()},5000)
-},1000*30*5)
