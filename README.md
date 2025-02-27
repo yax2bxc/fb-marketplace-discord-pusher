@@ -8,12 +8,12 @@ A marketplace userscript that checks the marketplace intervally and pushes onto 
 
 - Chrome Browser
 - Violent Monkey Extension
-- Faceb Account
+- Facebk Account
 
 ## Steps to Run
 
 1. Open Chrome
-2. Navigate to faceb and log in with your personal account
+2. Navigate to facebk and log in with your personal account
 3. Install the two Userscripts onto violentmonkey
 4. Adjust the excluded keywords in item spawner.js
 ```js
