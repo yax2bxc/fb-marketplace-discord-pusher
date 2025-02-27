@@ -1,7 +1,6 @@
 // ==UserScript==
-// @name        FB Marketplace New Item Tab Spawner
+// @name        Marketplace New Item Tab Spawner
 // @namespace   Violentmonkey Scripts
-// @match       https://www.facebook.com/marketplace/nyc/*
 // @grant       none
 // @version     1.0
 // @author      A.Y
@@ -13,7 +12,6 @@
 
 // Add deleted drawer to see things youve deleted
 // Manage Configuration here!
-// EDIT the @match Parameter to your marketplace search results! i.e https://www.facebook.com/marketplace/nyc/*
 startupDelay = 10 * 1000 // 10 Seconds to startup is recommended!
 spawnTabDelay = 40 * 1000
 // Excluded in title as to not open these tabs

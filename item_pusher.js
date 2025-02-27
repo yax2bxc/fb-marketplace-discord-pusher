@@ -1,8 +1,7 @@
 
 // ==UserScript==
-// @name        FB marketplace item discord Pusher
+// @name        Marketplace item discord Pusher
 // @namespace   Violentmonkey Scripts
-// @match       https://www.facebook.com/marketplace/item/*
 // @grant       GM_registerMenuCommand
 // @grant       GM_xmlhttpRequest
 // @version     1.0
@@ -52,7 +51,6 @@ function checkPage(){
     return null
   }
 
-  // if(innerText.includes('Joined Facebook in 2024')){
   //   return null
   // }
 
@@ -78,7 +76,6 @@ function embedSend(title,description,thumbnail,author,footer){
       },
       "author":{
         "name":author,
-        "icon_url":"https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png",
       },
       "footer":{
         "text":footer,
