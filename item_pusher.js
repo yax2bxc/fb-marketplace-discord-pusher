@@ -17,7 +17,7 @@ discordwebhookurl = "YOUR URL HERE"
 var bioexcluded = []
 
 function formatImgSrc(imgsrc){
-  return new URL(imgsrc).pathname.split('/').pop()
+  return new URL()
 }
 
 function checkPage(){
